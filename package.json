@@ -1,0 +1,30 @@
+{
+  "name": "kmoney-api",
+  "version": "0.0.1",
+  "main": "index.js",
+  "author": {
+    "name": "Kaique Lima",
+    "email": "kaikegl@gmail.com"
+  },
+  "license": "MIT",
+  "private": true,
+  "scripts": {
+    "fix": "echo 123"
+  },
+  "commitlint": {
+    "extends": [
+      "@commitlint/config-conventional"
+    ]
+  },
+  "lint-staged": {
+    "./src/**/*.{js,md,json}": [
+      "yarn fix"
+    ]
+  },
+  "devDependencies": {
+    "@commitlint/cli": "^17.0.3",
+    "@commitlint/config-conventional": "^17.0.3",
+    "husky": "^8.0.1",
+    "lint-staged": "^13.0.3"
+  }
+}
