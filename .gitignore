@@ -1,0 +1,36 @@
+# gitignore.io #
+# OS Specific
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehtumbs.db
+Thumbs.db
+*cache.json
+
+# IDE Specific
+nbproject
+.~lock.*
+.buildpath
+.idea
+.project
+.settings
+composer.lock
+*.sublime-workspace
+*.swp
+*.swo
+
+# Project specific
+node_modules
+tmp
+*.tmp*
+*.log
+.changelog
+coverage
+.nyc_output/
+.env
+*.progress-estimator*
+*.docker-volumes
+dist
+.volumes
