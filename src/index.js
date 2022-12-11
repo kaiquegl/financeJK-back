@@ -5,8 +5,8 @@ import { router } from './routes';
 
 const app = new Koa();
 
-app.use(bodyParser);
+app.use(bodyParser());
 app.use(router.routes());
 app.use(router.allowedMethods());
 
-app.listen(8000);
+app.listen(process.env.SERVER_PORT, () => console.log(`Server started at port ${process.env.SERVER_PORT}`));
